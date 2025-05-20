@@ -7,6 +7,7 @@ import EventDetailPage from './pages/EventDetailPage';
 import UserHistoryPage from './pages/UserHistoryPage';
 import { AuthProvider } from "./context/AuthContext";
 import RegisterPage from "./pages/RegisterPage";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/recommend" element={<RecommendPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/event/:id" element={<EventDetailPage />} />
           <Route path="/history/:userId" element={<UserHistoryPage />} />
         </Routes>

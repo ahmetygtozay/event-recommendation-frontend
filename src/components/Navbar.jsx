@@ -29,6 +29,12 @@ const Navbar = () => {
             </Link>
           )}
 
+          {userId && (
+            <Link to="/profile" className="hover:underline">
+              Profile
+            </Link>
+          )}
+
           {userId ? (
             <button onClick={handleLogout} className="hover:underline">
               Logout
